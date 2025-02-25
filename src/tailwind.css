@@ -15,11 +15,11 @@ body{@apply bg-gray_2;}
 .h1{@apply text-3xl lg:text-4xl xl:text-[40px] 2xl:text-5xl font-extrabold;}
 .text36{@apply text-28 lg:text-32 xl:text-36 font-bold;}
 .text24{@apply text-18 lg:text-20 xl:text-24;}
-.btn-primary{@apply py-1.5 px-3.5 xl:py-2.5 xl:px-5 bg-primary border border-primary text-white text-center text-14 xl:text-16 whitespace-nowrap font-semibold rounded-md lg:rounded-lg xl:rounded-xl hover:bg-transparent hover:text-primary anim;}
-.btn-secondary{@apply  py-1.5 px-3.5 xl:py-2.5 xl:px-5 bg-transparent border border-slate_1 text-dark text-14 xl:text-16 font-semibold rounded-md lg:rounded-lg xl:rounded-xl anim hover:bg-slate_1 hover:text-white;}
+.btn-primary{@apply inline-block py-1.5 px-3.5 xl:py-2.5 xl:px-5 bg-primary border border-primary text-white text-center text-14 xl:text-16 whitespace-nowrap font-semibold rounded-md lg:rounded-lg xl:rounded-xl hover:bg-transparent hover:text-primary anim;}
+.btn-secondary{@apply  inline-block py-1.5 px-3.5 xl:py-2.5 xl:px-5 bg-transparent border border-slate_1 text-dark text-14 xl:text-16 font-semibold rounded-md lg:rounded-lg xl:rounded-xl anim hover:bg-slate_1 hover:text-white;}
 /* label and input css start  */
 .label{@apply text-14 font-semibold text-dark mb-1.5 block;}
-.input{@apply block w-full py-2.5 xl:py-3 px-2.5 lg:px-3 xl:px-4 text-14 xl:text-16 text-dark placeholder:text-gray_1 bg-white font-normal border border-slate_2 rounded-xl outline-none;}
+.input{@apply block w-full py-2 xl:py-2.5 px-2.5 lg:px-3.5 2xl:px-4 text-14 2xl:text-16 text-dark placeholder:text-gray_1 bg-white font-normal border border-slate_2 rounded-xl outline-none;}
 /* label and input css end  */
 /* CheckBox css start  */
 .checkbox{@apply w-5 h-5 rounded border-2 border-slate_2 flex items-center justify-center;}

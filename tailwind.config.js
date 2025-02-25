@@ -29,9 +29,11 @@ module.exports = {
          'xl': '1280px',
          // => @media (min-width: 1280px) { ... }
          '2xl': '1536px',
+         '3xl': '1700px',
          // => @media (min-width: 1536px) { ... }
        },
        fontSize:{
+         '12' : ['12px','18px'], 
          '14' : ['14px','20px'], 
          '16' : ['16px','26px'], 
          '18' : ['18px','24px'], 
