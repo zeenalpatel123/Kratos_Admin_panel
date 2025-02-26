@@ -12,7 +12,7 @@
         <aside id="open" class="fixed h-screen inset-y-0 left-0 w-[264px] bg-white overflow-x-hidden overflow-y-auto -translate-x-full xl:translate-x-0 anim z-50">
             <div class="flex items-center justify-between p-4 2xl:p-6">
                 <img src="assets/images/logo.png" class="mx-0 xl:mx-auto" alt="logo"/>
-                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center xl:hidden" onclick="toggleActive('#open','-translate-x-full');">
+                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center xl:hidden" onclick="toggleActive('#open','-translate-x-full');toggleActive('#cover','-translate-x-full');">
                     <span class="icon-arrow_right_2 font-semibold text-white text-[20px]"></span>
                 </div>
             </div>
@@ -241,19 +241,39 @@
                             <a href="" class="menu_link">Role & Permission</a>
                         </div>
                     </li>
+                    <li>
+                        <div class="xl:hidden flex items-center justify-center space-x-6 p-5">
+                            <div>
+                                <div class="w-10 xl:w-12 h-10 xl:h-12 rounded-full bg-white flex items-center justify-center shadow-custom_2">
+                                    <span class="icon-dollar_circle_fill text-[18px] lg:text-[20px] 2xl:text-[24px] text-primary"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="w-10 xl:w-12 h-10 xl:h-12 rounded-full bg-white flex items-center justify-center shadow-custom_2">
+                                    <span class="icon-festival_list text-[18px] lg:text-[20px] 2xl:text-[24px] text-primary"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="w-10 xl:w-12 h-10 xl:h-12 rounded-full bg-white flex items-center justify-center shadow-custom_2">
+                                    <span class="icon-calc_fill text-[18px] lg:text-[20px] 2xl:text-[24px] text-primary"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul> 
             </div>
         </aside>
+        <div id="cover" class="fixed w-full h-screen backdrop-blur-sm bg-black/30 xl:w-0 z-20 origin-left xl:hidden -translate-x-full"></div>
         <div class="w-full xl:w-[calc(100%-264px)]">
             <header class="px-5 lg:px-7 2xl:px-9 py-5 lg:py-6 xl:py-8">
                 <div class="flex items-center justify-between">
-                    <span class="icon-menu text-[24px] pr-5 block xl:hidden" onclick="toggleActive('#open','-translate-x-full');"></span>
+                    <span class="icon-menu text-[24px] pr-5 block xl:hidden" onclick="toggleActive('#open','-translate-x-full');toggleActive('#cover','-translate-x-full');"></span>
                     <h3 class="text36 text-dark font-bold">Dashboard</h3>
                     <div class="w-60 xl:w-80 hidden md:flex items-center ml-auto xl:mr-6 bg-white rounded-full px-3 md:px-5 xl:px-6 py-1.5 xl:py-2.5 shadow-custom_2">
                         <label for="search">
                         <span class="block icon-search bg-white text-gray_1 text-2xl cursor-pointer"></span>
                         </label>
-                        <input type="search" name="search" id="search" class="w-full outline-none bg-transparent text-dark placeholder:text-gray_1 pl-2.5" placeholder="Search Member" autocomplete="false">
+                        <input type="search" name="search" id="search" class="w-full outline-none bg-transparent text-dark placeholder:text-gray_1 pl-2.5" placeholder="Search Member"/>
                     </div>
                     <div class="hidden xl:flex items-center space-x-6">
                         <div>
@@ -278,11 +298,11 @@
                         </div>
                         <div class="absolute top-14 right-0 w-40 anim group-hover:visible invisible bg-white border border-[#E2E8F0] rounded-lg py-3 px-2 z-20">
                             <ul>
-                                <li class="flex items-center space-x-2 p-1">
+                                <li class="flex items-center space-x-2 p-1 cursor-pointer">
                                     <span class="icon-edit text-[24px] text-drak"></span>
                                     <span class="inline-block text-12 font-medium text-dark text-nowrap">Update Profile</span>
                                 </li>
-                                <li class="flex items-center space-x-2 p-1">
+                                <li class="flex items-center space-x-2 p-1 cursor-pointer">
                                     <span class="icon-logout text-[24px] text-drak"></span>
                                     <span class="inline-block text-12 font-medium text-dark text-nowrap">Logout</span>
                                 </li>
@@ -438,34 +458,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap items-center -mx-3.5">
-                    <div class="w-full lg:w-6/12 p-3.5">
-                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-5">
-                            <h2 class="text-20 text-text-dark font-bold">Room Booking Statistic</h2>
+                <div class="flex flex-wrap items-center -mx-2 xl:-mx-3.5">
+                    <div class="w-full lg:w-6/12 p-2 xl:p-3.5">
+                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-3 lg:p-4 2xl:p-5">
+                            <h2 class="text-16 xl:text-18 2xl:text-20 text-text-dark font-bold">Room Booking Statistic</h2>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 lg:w-3/12 p-3.5">
-                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-5">
-                            <h2 class="text-20 text-text-dark font-bold">Today’s Booking Status</h2>
+                    <div class="w-full md:w-1/2 lg:w-3/12 p-2 xl:p-3.5">
+                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-3 lg:p-4 2xl:p-5">
+                            <h2 class="text-16 xl:text-18 2xl:text-20 text-text-dark font-bold">Today’s Booking Status</h2>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 lg:w-3/12 p-3.5">
-                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-5">
-                            <h2 class="text-20 text-text-dark font-bold">Sales Income This Month</h2>
+                    <div class="w-full md:w-1/2 lg:w-3/12 p-2 xl:p-3.5">
+                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-3 lg:p-4 2xl:p-5">
+                            <h2 class="text-16 xl:text-18 2xl:text-20 text-text-dark font-bold">Sales Income This Month</h2>
                         </div>
                     </div>
-                    <div class="w-full lg:w-6/12 p-3.5">
-                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-5">
-                            <h2 class="text-20 text-text-dark font-bold">Payment Statistic</h2>
+                    <div class="w-full lg:w-6/12 p-2 xl:p-3.5">
+                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-3 lg:p-4 2xl:p-5">
+                            <h2 class="text-16 xl:text-18 2xl:text-20 text-text-dark font-bold">Payment Statistic</h2>
                         </div>
                     </div>
-                    <div class="w-full mlg:w-6/12 p-3.5">
-                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-5">
-                            <h2 class="text-20 text-text-dark font-bold">Inquiry &amp; Followup Statistic</h2>
+                    <div class="w-full mlg:w-6/12 p-2 xl:p-3.5">
+                        <div class="bg-white shadow-login_custom rounded-lg md:rounded-xl xl:rounded-2xl p-3 lg:p-4 2xl:p-5">
+                            <h2 class="text-16 xl:text-18 2xl:text-20 text-text-dark font-bold">Inquiry &amp; Followup Statistic</h2>
                         </div>
                     </div>
                 </div>
-                <div class="w-full bg-white border border-slate_2 p-4 rounded-2xl mt-6 xl:mt-8 2xl:mt-10">
+                <div class="w-full bg-white border border-slate_2 p-4 rounded-2xl mt-4 lg:mt-6 xl:mt-8 2xl:mt-10">
                     <div class="w-full flex items-center">
                         <strong class="block text-20 w-1/2">Recent Inquiries</strong>
                     </div>
@@ -473,7 +493,7 @@
                         <div class="w-full relative">
                             <div class="w-full relative overflow-hidden">
                                 <div class="border-t border-gray_3 overflow-x-auto relative">
-                                    <table class="w-full text-center">
+                                    <table class="w-full text-center common_tabel">
                                         <thead>
                                             <tr>
                                                 <th> Sr.No </th>

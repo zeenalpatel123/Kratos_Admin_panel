@@ -60,8 +60,8 @@ input:checked + .radio span{@apply opacity-100;}
 }
 /* menu list open,close and hover css end  */
 /* table css start  */
-table tr th{@apply text-14 font-semibold text-dark py-3 xl:py-5 px-2 whitespace-nowrap;}
-table tr td{@apply text-14 font-medium text-slate_3 py-2 xl:py-3 px-2 whitespace-nowrap;}
+.common_tabel tr th{@apply text-14 font-semibold text-dark py-3 xl:py-5 px-2 whitespace-nowrap;}
+.common_tabel tr td{@apply text-14 font-medium text-slate_3 py-2 xl:py-3 px-2 whitespace-nowrap;}
 .table_border tr td{@apply border-b border-slate_2;}
 .table_border_t tr td{@apply border-t border-slate_2;}
 .table_btn{@apply py-1.5 px-3 bg-primary border border-primary text-white text-14 xl:text-16 font-semibold rounded-md lg:rounded-lg xl:rounded-xl hover:bg-transparent hover:text-primary anim;}
