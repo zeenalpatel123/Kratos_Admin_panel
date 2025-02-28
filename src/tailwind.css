@@ -54,7 +54,7 @@ input:checked + .radio span{@apply opacity-100;}
 .menu_list.active span,.menu_list.active a{
     color: #D7B56D;
 }
-.menu_list.active span.icon-arrow_down{@apply -rotate-180;}
+.menu_list.active span.icon-down{@apply -rotate-180;}
 .menu_list:hover::after,.menu_list.active::after{
     height: 100%;
 }

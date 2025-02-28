@@ -25,33 +25,50 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-close_eye:before {
-    content: "\e927";
+  .icon-booking:before {
+    content: "\e90d";
   }
-  .icon-arrow_left:before {
+  .icon-top_up:before {
+    content: "\e90e";
+  }
+  .icon-reports:before {
     content: "\e90f";
   }
-  .icon-arrow-right:before {
-    content: "\e91e";
+  .icon-utility:before {
+    content: "\e910";
   }
-  .icon-chevrons-left:before {
-    content: "\e922";
+  .icon-payments:before {
+    content: "\e911";
   }
-  .icon-Icon:before {
-    content: "\e925";
+  .icon-master:before {
+    content: "\e912";
   }
-  .icon-logout:before {
-    content: "\e926";
-    color: #dc2626;
+  .icon-role:before {
+    content: "\e913";
   }
-  .icon-menu:before {
+  .icon-down:before {
+    content: "\e914";
+  }
+  .icon-search:before {
+    content: "\e915";
+  }
+  .icon-Union:before {
+    content: "\e916";
+  }
+  .icon-sms_tracking:before {
+    content: "\e90c";
+  }
+  .icon-announcement:before {
     content: "\e90b";
   }
-  .icon-bank_fill:before {
-    content: "\e902";
+  .icon-member:before {
+    content: "\e90a";
   }
-  .icon-arrow_right_2:before {
-    content: "\e907";
+  .icon-enquiry:before {
+    content: "\e940";
+  }
+  .icon-export:before {
+    content: "\e94f";
   }
   .icon-add:before {
     content: "\e900";
@@ -59,94 +76,52 @@
   .icon-close:before {
     content: "\e901";
   }
-  .icon-utility_fill:before {
+  .icon-arrow_left:before {
+    content: "\e902";
+  }
+  .icon-calendar:before {
     content: "\e903";
   }
-  .icon-calendar_unfill:before {
+  .icon-clock:before {
     content: "\e904";
   }
-  .icon-arrow_down:before {
+  .icon-document_upload:before {
     content: "\e905";
   }
-  .icon-top_up_fill:before {
+  .icon-dollar_circle:before {
     content: "\e906";
   }
-  .icon-enquiry_fill:before {
-    content: "\e908";
-  }
-  .icon-clock_unfill:before {
-    content: "\e909";
-  }
-  .icon-document_fill:before {
-    content: "\e90a";
-  }
-  .icon-document_upload_fill:before {
-    content: "\e90c";
-  }
-  .icon-dollar_circle_fill:before {
-    content: "\e90d";
-  }
   .icon-edit:before {
-    content: "\e90e";
-  }
-  .icon-payment_fill:before {
-    content: "\e910";
-  }
-  .icon-eye:before {
-    content: "\e911";
-  }
-  .icon-user_master_fill:before {
-    content: "\e912";
-  }
-  .icon-reports_fill:before {
-    content: "\e913";
-  }
-  .icon-festival_list:before {
-    content: "\e914";
+    content: "\e907";
   }
   .icon-dashboard:before {
-    content: "\e915";
+    content: "\e909";
   }
-  .icon-calc_fill:before {
-    content: "\e916";
+  .icon-festival:before {
+    content: "\e946";
   }
-  .icon-messages_fill:before {
-    content: "\e917";
+  .icon-image_manager:before {
+    content: "\e947";
   }
-  .icon-money_send:before {
-    content: "\e918";
+  .icon-logout:before {
+    content: "\e948";
   }
-  .icon-role_fill:before {
-    content: "\e919";
+  .icon-math:before {
+    content: "\e949";
   }
-  .icon-member_fill:before {
-    content: "\e91a";
+  .icon-bell:before {
+    content: "\e94a";
   }
-  .icon-profile_delete:before {
-    content: "\e91b";
+  .icon-sms:before {
+    content: "\e94b";
   }
-  .icon-search:before {
-    content: "\e91c";
+  .icon-trash:before {
+    content: "\e94c";
   }
-  .icon-sms_1:before {
-    content: "\e91d";
+  .icon-wallet_add:before {
+    content: "\e94d";
   }
-  .icon-sms_fill:before {
-    content: "\e91f";
+  .icon-document:before {
+    content: "\e94e";
   }
-  .icon-amenities_fill:before {
-    content: "\e920";
-  }
-  .icon-delete:before {
-    content: "\e921";
-  }
-  .icon-user_square:before {
-    content: "\e923";
-  }
-  .icon-add_payment_fill:before {
-    content: "\e924";
-  }
-  
-  
-  
   
